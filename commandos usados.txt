@@ -1,0 +1,18 @@
+npm init
+npm i express
+npm i morgan
+npm i promise-mysql@latest
+npm i cors
+npm i -g typescript
+
+Luego de modificar el package.json 
+npm run build
+
+y haber creado la carpeta build usando el comando tsc -init
+Podemos ejecutar,
+
+node buid/index.js 
+en la carpeta build quedaran los .js generados a partir del .TS
+
+Al usar el comando 
+npm i nodemon -D, tendremos un server que actualizara pero solo en cuando estemos en modo desarrollo
