@@ -16,3 +16,11 @@ en la carpeta build quedaran los .js generados a partir del .TS
 
 Al usar el comando 
 npm i nodemon -D, tendremos un server que actualizara pero solo en cuando estemos en modo desarrollo
+
+Se configura el package.json para que haya dos scripts uno para 
+ejecutar el app en modo dev y uno para que siempre que se produzca
+una modificacion a nivel de ts, el codigo se transpile a js, automaticamente.
+
+ng new test --routing --standalone=false
+
+ng serve --o --live-reload

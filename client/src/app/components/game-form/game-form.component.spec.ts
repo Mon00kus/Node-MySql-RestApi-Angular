@@ -8,7 +8,7 @@ describe('GameFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GameFormComponent]
+      declarations: [GameFormComponent]
     })
     .compileComponents();
     
