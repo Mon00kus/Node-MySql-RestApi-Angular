@@ -1,0 +1,16 @@
+.navbar-nav .nav-item:hover {
+    background-color: #f0f0f0; /* Cambia este color según tus preferencias */
+    border-radius: 5px; /* Opcional, para bordes redondeados */
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #000000; /* Cambia este color para modificar el color del texto */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    /* font-style: italic; */ /* Cambia a cursiva */
+    font-weight: bold; /* Hace el texto en negrita */
+    /* text-decoration: underline; */ /* Subraya el texto */
+    font-size: 15px; /* Aumenta el tamaño de la fuente */
+    color: #0056b3; /* Cambia el color del texto, ajusta según sea necesario */
+}
