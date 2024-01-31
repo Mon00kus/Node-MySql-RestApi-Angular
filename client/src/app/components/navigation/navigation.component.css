@@ -14,3 +14,23 @@
     font-size: 15px; /* Aumenta el tamaño de la fuente */
     color: #0056b3; /* Cambia el color del texto, ajusta según sea necesario */
 }
+
+hr {
+    border: none; /* Elimina el borde predeterminado */
+    height: 1px; /* Establece la altura del hr */
+    background-color: #ccc; /* Color de fondo del hr, ajústalo según necesites */
+    position: relative; /* Importante para posicionar el pseudo-elemento respecto al hr */
+    margin: 0px 0; /* Ajusta el margen según necesites */
+  }
+
+  hr::before {
+    content: ""; /* Necesario para que el pseudo-elemento se muestre */
+    position: absolute; /* Posicionamiento absoluto respecto al hr */
+    top: -2px; /* Ajusta para mover la sombra hacia arriba */
+    left: 0;
+    right: 0;
+    height: 5px; /* Altura de la "sombra" */
+    background-color: rgba(0, 128, 0, 0.1); /* Color de la sombra, ajusta la transparencia según necesites */
+   /*  blur-radius: 5px; */ /* Esto no es válido CSS. Se muestra como ejemplo de intención. */
+    filter: blur(3px); /* Aplicar desenfoque al color de fondo para crear efecto de sombra */
+  }

@@ -1,3 +1,41 @@
-<div class="container">
-  <p>game-list works!</p>
+<div class="col-md-4" *ngFor="let game of games">
+  <div class="card text-center">
+    <div class="card-header bg-dark text-white d-flex justify-content-between aling-items-center">
+      {{game.title}}
+      <button class="btn btn-danger" (click)="deleteGame(game.id)">                
+        <fa-icon [icon]="['fas', 'trash-alt']"></fa-icon>
+      </button>      
+    </div>
+    <img [src]="game.image" alt="" class="card-img-top img-fluid small-image">
+    <div class="card-body">
+      <p>
+        {{game.description}}
+      </p>
+      <a href="" class="btn btn-info btn-block">
+        Edit Game
+      </a>
+    </div>
+  </div>
 </div>
+<!-- <div style="text-align:center">
+  <h2>Using Solid Icons</h2>
+  <fa-icon [icon]="['fas', 'square']"></fa-icon>
+  <br />
+  <fa-icon [icon]="['fas', 'check-square']"></fa-icon>
+</div>
+<hr />
+<div style="text-align:center">
+  <h2>Using Regular Icons</h2>
+  <fa-icon [icon]="['far', 'square']"></fa-icon>
+  <br />
+  <fa-icon [icon]="['far', 'check-square']"></fa-icon>
+</div>
+<hr />
+<div style="text-align:center">
+  <h2>Using Brand Icons</h2>
+  <fa-icon [icon]="['fab', 'stack-overflow']"></fa-icon>
+  <br />
+  <fa-icon [icon]="['fab', 'github']"></fa-icon>
+  <br />
+  <fa-icon [icon]="['fab', 'medium']"></fa-icon>
+</div> -->
